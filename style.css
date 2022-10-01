@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body::before{
+    content: "";
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    position: absolute;
+    z-index: -2;
+    opacity: 0.4;
+    background: url("/photo_2022-10-01_17-38-08.jpg") no-repeat center center/cover;
+}
+body{
+    position: relative;
+}
+#hammenu img{
+    width:2rem;
+    
+}
+#hammenu{
+    display: none;
+}
+hr{
+    display: none;
+}
+
+
+#navbar a{
+    text-decoration: none;
+    color: white;
+}
+#navbar a:hover{
+    color: black;
+}
+#hidemenu{
+    display: flex;
+}
+
+#navbar ul{
+    list-style: none;
+    display: flex;
+    color: white;
+    width: 100%;
+    margin-bottom: 2rem;
+    background-color: rgb(159, 116, 116);
+    position:absolute;
+}
+li{
+    margin: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#above{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    border:2px solid red;
+    border-radius: 5px ;
+    box-shadow: 5px 5px red;
+}
+#middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    padding: 1rem;
+    z-index: -1;
+
+}
+#education{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    z-index: -1;
+}
+.h-primary{
+    font-size:3.5rem;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#profile{
+    width:200px;
+    margin:10px;
+    border-radius:100px ;
+}
+#oneside{
+    display: flex;
+    width: 60%;
+}
+.main{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    color:rgb(58, 40, 108);
+}
+
+.content{
+font-size: 1.5rem;
+/* font-family: 'Times New Roman', Times, serif; */
+text-align: center;
+font-family: 'Bree Serif', serif;
+
+
+}
+.content .btn{
+    display: block;
+    margin: 10px auto;
+}
+#school{
+    border: 2px solid;
+
+    padding: 1rem;
+    margin:2rem 0;
+    margin-top:1rem ;
+    background-color: beige;
+
+
+}
+
+a{
+    text-decoration: none;
+}
+#college{
+    border: 2px solid;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: beige;
+    
+}
+#school:hover,#college:hover{
+    transform: scale(1.01);
+}
+#skill{
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+}
+#formgroup .btn,.btn{
+    display: flex;
+    padding:0.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color:brown;
+    color: white;
+    border: 1px solid black;
+}
+#fromgroup .btn:hover,.btn:hover{
+    background-color: red;
+}
+.skills{
+    border:2px solid;
+    box-sizing: border-box;
+    box-shadow: 5px 5px;
+    padding:1rem;
+    margin: 1rem;
+    background-color: rgb(197, 179, 179);
+}
+#project{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    align-items: center;
+}
+#project a{
+    color:black;
+}
+.projects{
+    border:2px solid;
+    box-shadow:5px 5px;
+    padding: 1rem;
+    margin: 1rem;
+    background-color:rgb(197, 179, 179);
+}
+
+.logos{
+    width:139px;
+    height:130px;
+    display: block;
+    margin: auto;
+
+
+}
+#link{
+    display: flex;
+    justify-content: center;
+
+}
+.links{
+    width:50px;
+    margin:10px;
+    border-radius: 10px;
+}
+#formgroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+#formgroup input,textarea{
+    padding: 5px;
+    margin: 8px;
+    border-radius: 10px;
+    border: 2px solid;
+}
+#formgroup input[placeholder],textarea{
+    font-size: 1.2rem;
+}
+footer{
+    background-color: black;
+    color: white;
+}
+@media  screen and (max-width:943px) {
+    #skill{
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width:643px){
+    #hammenu {
+        display: flex;
+    }
+    #hammenu img{
+        display: flexs;
+    }
+    #navbar ul{
+        flex-direction: column;
+    }
+    #hidemenu{
+        display: none;
+        flex-direction: column;
+    }
+    #hammenu p{
+       margin:auto;
+    }
+    hr{
+        display: block;
+    }
+    
+
+    
+}
+@media screen and (max-width:953px) {
+    #middle{
+        flex-direction: column;
+    }
+    #about{
+        width:100%;
+    }
+    #onseside{
+        justify-content: center;
+    }
+    
+}
+@media screen and (max-width:783px){
+    #oneside{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    #profile{
+        display: block;
+        margin: auto;
+    }
+}
+@media screen and (max-width:425px){
+    .h-primary{
+        font-size:2.8rem;
+    }
+    .h-secondary{
+        font-size: 2rem;
+    }
+    .content{
+        font-size: 1.5rem;
+    }
+    .main{
+        font-size: 3rem;
+    }
+}
+    
